@@ -21,7 +21,7 @@ html {
 }
 body {
   font-family: "poppins";
-  background-color: rgb(139, 140, 141);
+  background-color: rgb(235, 243, 252);
 }
 /* header start*/
 header {
@@ -46,7 +46,7 @@ main {
   width: 100vw;
   text-align: center;
   background-color: rgb(241, 241, 241);
-  height: 100vh;
+
   margin-top: 20px;
   display: block;
 }
@@ -104,9 +104,8 @@ section {
 }
 section .luas {
   position: relative;
-  border: 1px solid cyan;
+  border: 3px solid rgb(0, 89, 255);
   min-width: 90vw;
-  height: 200px;
 }
 section .luas .header-luas {
   background-color: rgb(0, 89, 255);
@@ -117,5 +116,93 @@ section .luas .header-luas h2 {
   color: aliceblue;
   font-size: 1.7rem;
   font-family: "poppins-semibold";
+  text-align: center;
+}
+section .luas .kotak {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  line-height: 3;
+}
+section .luas .kotak span {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+}
+section .luas .text {
+  padding: 30px;
+  border-bottom: 3px solid rgb(211, 209, 209);
+}
+section .luas .text h4 {
+  margin-bottom: 50px;
+}
+section .luas .text p {
+  line-height: 2;
+}
+section .luas .text p:nth-child(3) {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+section .luas .nilai-luas {
+  display: block;
+  position: relative;
+}
+section .luas .nilai-luas h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "poppins-semibold";
+  font-size: 2rem;
+}
+section .luas .nilai-luas input {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 3px;
+  position: relative;
+  margin: 40px;
+}
+section .luas .nilai-luas .result-luas {
+  margin-left: 20px;
+  line-height: 2.5;
+}
+section .luas .nilai-luas button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+section .luas .nilai-luas button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+section .luas .nilai-luas button:hover {
+  color: white;
+}
+section .luas .nilai-luas button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+section .luas .nilai-luas button:hover::before {
+  top: -30px;
+  left: -30px;
 }
 /* main section luas end */

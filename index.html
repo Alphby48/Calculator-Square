@@ -24,13 +24,35 @@
         <button>Luas Persegi</button>
         <button>Keliling Persegi</button>
       </div>
-      <section>
-        <div class="luas">
-          <div class="header-luas">
-            <h2>Luas Persegi</h2>
-          </div>
-        </div>
-      </section>
     </main>
+    <section>
+      <div class="luas">
+        <div class="header-luas">
+          <h2>Luas Persegi</h2>
+        </div>
+        <div class="kotak">
+          <span></span>
+          <p>bujur sangkar</p>
+        </div>
+        <div class="text">
+          <h4>Rumus luas persegi:</h4>
+          <p>dimana:</p>
+          <p>L = S x S</p>
+          <p>L = Luas</p>
+          <p>S = Sisi</p>
+        </div>
+        <div class="nilai-luas">
+          <h2>Hitung Luas Persegi</h2>
+          <input id="sisi-luas" name="sisi-luas" type="text" required />
+          <p class="result-luas" id="rumus-luas">L = S x S</p>
+          <p class="result-luas" id="perhitungan-luas">L = S x S</p>
+          <p class="result-luas"><span id="output-luas">L = </span></p>
+          <button type="submit" name="hitung-luas" onclick="hitungLuas()">
+            Hitung
+          </button>
+          <button type="reset" name="reset-luas">Reset</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
