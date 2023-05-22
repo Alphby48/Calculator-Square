@@ -96,7 +96,7 @@ main .button-click button:active {
   transition: 100ms;
 }
 /* main page end*/
-/* main section luas start */
+/* section luas start */
 section {
   display: flex;
   align-items: center;
@@ -106,6 +106,7 @@ section .luas {
   position: relative;
   border: 3px solid rgb(0, 89, 255);
   min-width: 90vw;
+  margin-bottom: 50px;
 }
 section .luas .header-luas {
   background-color: rgb(0, 89, 255);
@@ -151,7 +152,7 @@ section .luas .nilai-luas {
   display: block;
   position: relative;
 }
-section .luas .nilai-luas h2 {
+section .luas .nilai-luas h3 {
   text-align: center;
   padding-top: 50px;
   font-family: "poppins-semibold";
@@ -164,45 +165,44 @@ section .luas .nilai-luas input {
   position: relative;
   margin: 40px;
 }
-section .luas .nilai-luas .result-luas {
-  margin-left: 20px;
-  line-height: 2.5;
+section .luas .hasil-luas {
+  display: none;
+  justify-content: left;
 }
-section .luas .nilai-luas button {
-  --color: #0077ff;
-  font-family: inherit;
-  display: inline-block;
-  width: 6em;
-  height: 2.6em;
-  line-height: 2.5em;
-  overflow: hidden;
-  margin: 20px;
-  font-size: 17px;
-  z-index: 1;
-  color: var(--color);
-  border: 2px solid var(--color);
-  border-radius: 6px;
-  position: relative;
-}
-section .luas .nilai-luas button::before {
-  position: absolute;
-  content: "";
-  background: var(--color);
-  width: 150px;
-  height: 200px;
-  z-index: -1;
-  border-radius: 50%;
-}
-section .luas .nilai-luas button:hover {
+section .luas .btn-hitung {
+  background-color: rgba(48, 115, 250, 0.648);
   color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: 75px;
+  height: 35px;
+  border-radius: 6px;
+  border: 0px;
+  display: block;
 }
-section .luas .nilai-luas button:before {
-  top: 100%;
-  left: 100%;
-  transition: 0.3s all;
+section .luas .hitung {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 70px;
 }
-section .luas .nilai-luas button:hover::before {
-  top: -30px;
-  left: -30px;
+section .luas .reset {
+  justify-content: right;
+  display: flex;
+  min-height: 50px;
+  margin-bottom: 50px;
 }
-/* main section luas end */
+section .luas .btn-reset {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+  border: 0px;
+  display: block;
+  float: right;
+}
+
+/* section luas end */

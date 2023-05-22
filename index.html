@@ -42,17 +42,49 @@
           <p>S = Sisi</p>
         </div>
         <div class="nilai-luas">
-          <h2>Hitung Luas Persegi</h2>
-          <input id="sisi-luas" name="sisi-luas" type="text" required />
-          <p class="result-luas" id="rumus-luas">L = S x S</p>
-          <p class="result-luas" id="perhitungan-luas">L = S x S</p>
-          <p class="result-luas"><span id="output-luas">L = </span></p>
-          <button type="submit" name="hitung-luas" onclick="hitungLuas()">
-            Hitung
-          </button>
-          <button type="reset" name="reset-luas">Reset</button>
+          <h3>Hitung Luas Persegi</h3>
+          <input
+            id="sisi-luas"
+            name="sisi-luas"
+            type="text"
+            placeholder="Nilai Sisi"
+            required
+          />
+
+          <div id="hasilLuas" class="hasil-luas">
+            <p class="result-luas" id="rumus-luas">L = S x S</p>
+            <p class="result-luas" id="perhitungan-luas"></p>
+            <p class="result-luas2">
+              L = <span id="output-luas"></span> x
+              <span id="output-luas2"></span>
+            </p>
+            <p class="result-luas2"><span id="result-akhir"></span></p>
+            <p class="result-luas">L = <span id="result"></span> m&sup2;</p>
+          </div>
+          <span class="hitung">
+            <button
+              class="btn-hitung"
+              id="btn-hitung"
+              name="hitung-luas"
+              onclick="hitungLuas()"
+            >
+              Hitung
+            </button>
+          </span>
+          <span class="reset">
+            <button
+              class="btn-reset"
+              id="btn-reset"
+              name="reset-luas"
+              onclick="resetLuas()"
+            >
+              Reset
+            </button>
+          </span>
         </div>
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
