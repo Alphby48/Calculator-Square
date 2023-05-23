@@ -29,3 +29,23 @@ function resetLuas() {
   var elemen = document.getElementById("hasilLuas");
   elemen.style.display = "none";
 }
+
+//KELILING
+
+// Make button function to get output for Keliling Persegi from the input value
+function hitungKeliling() {
+  var sisiKeliling = document.getElementById("sisi-keliling").value;
+  var output = document.getElementById("output-keliling");
+
+  document.getElementById("rumus-keliling").innerHTML = " 4 x " + sisiKeliling;
+  document.getElementById("result-keliling").innerHTML = 4 * sisiKeliling;
+
+  output.style.display = "block";
+}
+
+// Make the reset function to hide the output Keliling Persegi
+function resetKeliling(flag) {
+  document.getElementById("output-keliling").style.display =
+    flag === 1 ? "block" : "none";
+  document.getElementById("sisi-keliling").value = "";
+}

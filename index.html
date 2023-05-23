@@ -85,6 +85,42 @@
       </div>
     </section>
 
+    <section>
+      <div class="keliling">
+        <div class="header-keliling">
+          <h2>Keliling Persegi</h2>
+        </div>
+        <div class="kotak">
+          <span></span>
+          <p>bujur sangkar</p>
+        </div>
+        <div class="text">
+          <h4>Rumus Keliling persegi:</h4>
+          <p>dimana:</p>
+          <p>K = 4 x S</p>
+          <p>K = Keliling</p>
+          <p>S = Sisi</p>
+        </div>
+        <div class="nilai-keliling">
+          <h3>Hitung Keliling Persegi</h3>
+                        <p>
+                            <input id="sisi-keliling" name="sisi-keliling" placeholder="Nilai Sisi" required 
+                            oninput="validateNumericInput(this)">
+                        </p>
+                        <div id="output-keliling" name="output-keliling" class="hasil">
+                            <p class="text-left">K = 4 x S<br>
+                            K = <span id="rumus-keliling"></span><br>
+                            K = <span id="result-keliling"></span> m&sup2;</p>
+                        </div>   
+                        <div class="hitung">
+                            <button name="hitung-keliling" onclick="hitungKeliling()" class="btn-hitung">Hitung</button>
+                        </div>
+                        <div class="text-right">
+                            <input type="reset" name="reset-keliling" onclick="resetKeliling(0)">
+                        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
