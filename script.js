@@ -1,3 +1,4 @@
+// Fungsi input luas persegi
 function hitungLuas() {
   var sisiLuas = document.getElementById("sisi-luas").value;
 
@@ -15,14 +16,13 @@ function hitungLuas() {
   document.getElementById("result").innerHTML = "<span>" + a2 + "</span>";
   console.log(a2);
 
-  // hasil input niai persegi:
   var elemen = document.getElementById("hasilLuas");
   elemen.style.display = "block";
   var elemen1 = document.getElementById("btn-reset");
   elemen1.style.display = "block";
   return sisiLuas;
 }
-//Reset kalkulator
+//Tombol Reset Luas persegi
 function resetLuas() {
   document.getElementById("sisi-luas").value = "";
 
@@ -32,7 +32,7 @@ function resetLuas() {
 
 //KELILING
 
-// Make button function to get output for Keliling Persegi from the input value
+// Fungsi input penghitung keliling
 function hitungKeliling() {
   var sisiKeliling = document.getElementById("sisi-keliling").value;
   var output = document.getElementById("output-keliling");
@@ -43,7 +43,7 @@ function hitungKeliling() {
   output.style.display = "block";
 }
 
-// Make the reset function to hide the output Keliling Persegi
+// Tombol Reset keliling persegi
 function resetKeliling(flag) {
   document.getElementById("output-keliling").style.display =
     flag === 1 ? "block" : "none";

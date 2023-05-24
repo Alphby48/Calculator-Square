@@ -8,10 +8,15 @@
     <title>Katik</title>
   </head>
   <body>
+    <!-- Header/ judul website start-->
     <header>
       <h1>Katik <span>Kalkulator Matematik</span></h1>
     </header>
+    <!-- Header/ judul website end-->
+
+    <!-- Halaman web start-->
     <main>
+      
       <div class="text">
         <h2>Welcome to Katik</h2>
         <p>Hai Sobat, Selamat datang di Katik :></p>
@@ -25,13 +30,14 @@
         <a href="#keliling"><button>Keliling Persegi</button></a>
       </div>
     </main>
+    <!-- Kalkulator penghitung luas start -->
     <section>
       <div class="luas"  id="luas">
         <div class="header-luas">
           <h2>Luas Persegi</h2>
         </div>
         <div class="kotak">
-          <span></span>
+          <img src="IMG/PERSEGI-removebg-preview.png" alt="">
           <p>bujur sangkar</p>
         </div>
         <div class="text">
@@ -43,10 +49,11 @@
         </div>
         <div class="nilai-luas">
           <h3>Hitung Luas Persegi</h3>
+          <!-- Fungsi start -->
           <input
             id="sisi-luas"
             name="sisi-luas"
-            type="text"
+            type="number"
             placeholder="Nilai Sisi"
             required
           />
@@ -81,17 +88,19 @@
               Reset
             </button>
           </span>
+          <!-- Fungsi end -->
         </div>
       </div>
     </section>
-
+        <!-- Kalkulator penghitung luas end -->
+        <!-- Kalkulator penghitung Keliling start -->
     <section>
       <div class="keliling"  id="keliling">
         <div class="header-keliling">
           <h2>Keliling Persegi</h2>
         </div>
         <div class="kotak">
-          <span></span>
+          <img src="IMG/PERSEGI-removebg-preview.png" alt="">
           <p>bujur sangkar</p>
         </div>
         <div class="text">
@@ -102,9 +111,10 @@
           <p>S = Sisi</p>
         </div>
         <div class="nilai-keliling">
-          <h3>Hitung Keliling Persegi</h3>
+          <h3>Hitung Keliling Persegi</h3> 
+          <!-- Fungsi start -->
                         <p>
-                            <input id="sisi-keliling" name="sisi-keliling" placeholder="Nilai Sisi" required 
+                            <input id="sisi-keliling" type="number" name="sisi-keliling" placeholder="Nilai Sisi" required 
                             oninput="validateNumericInput(this)">
                         </p>
                         <div id="output-keliling" name="output-keliling" class="hasil">
@@ -115,12 +125,18 @@
                         <div class="hitung">
                             <button name="hitung-keliling" onclick="hitungKeliling()" class="btn-hitung">Hitung</button>
                         </div>
-                        <div class="text-right">
-                            <input type="reset" name="reset-keliling" onclick="resetKeliling(0)">
+                        <div class="reset">
+                            <button type="reset" name="reset-keliling" onclick="resetKeliling(0)" class="btn-reset">Reset</button>
                         </div>
+            <!-- Fungsi end -->
       </div>
     </section>
-
+    <!-- Kalkulator penghitung Keliling end-->
+    <!-- Footer start -->
+    <footer>
+      <h6>Created by <a href="https://github.com/Alphby48" target="_blank">Aditya Ahfazh</a>. | &copy; 2023.</h6>
+    </footer>
+     <!-- Footer end -->
     <script src="script.js"></script>
   </body>
 </html>

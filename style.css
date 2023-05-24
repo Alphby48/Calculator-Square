@@ -22,7 +22,7 @@ html {
 }
 body {
   font-family: "poppins";
-  background-color: rgb(235, 243, 252);
+  background-color: rgb(224, 225, 227);
 }
 /* header start*/
 header {
@@ -46,7 +46,7 @@ main {
   box-sizing: border-box;
   width: 100vw;
   text-align: center;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(224, 225, 227);
 
   margin-top: 20px;
   display: block;
@@ -58,6 +58,7 @@ main .text h2 {
   margin-bottom: 20px;
   font-family: "poppins-semibold";
   font-size: 2rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 main .text p {
   line-height: 1.5;
@@ -110,6 +111,7 @@ section .luas {
   border: 3px solid rgb(0, 89, 255);
   min-width: 60vw;
   margin-bottom: 50px;
+  background-color: #ffffff;
 }
 section .luas .header-luas {
   background-color: rgb(0, 89, 255);
@@ -131,11 +133,7 @@ section .luas .kotak {
   margin-top: 30px;
   line-height: 3;
 }
-section .luas .kotak span {
-  width: 100px;
-  height: 100px;
-  border: 2px solid red;
-}
+
 section .luas .text {
   padding: 30px;
   border-bottom: 3px solid rgb(211, 209, 209);
@@ -167,7 +165,10 @@ section .luas .nilai-luas input {
   padding: 3px;
   position: relative;
   margin: 40px;
+  border-radius: 5px;
+  border: 2px solid gray;
 }
+
 section .luas .hasil-luas {
   display: none;
   justify-content: left;
@@ -223,7 +224,7 @@ section .luas .reset {
   display: flex;
   min-height: 50px;
   margin-bottom: 50px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 section .luas .btn-reset {
   display: inline-block;
@@ -251,11 +252,14 @@ section .luas .btn-reset:active {
   transform: translateY(4px);
 }
 /* section luas end */
+/* section Keliling Start */
+
 section .keliling {
   position: relative;
   border: 3px solid rgb(0, 89, 255);
   min-width: 60vw;
   margin-bottom: 50px;
+  background-color: #ffffff;
 }
 section .keliling .header-keliling {
   background-color: rgb(0, 89, 255);
@@ -277,11 +281,7 @@ section .keliling .kotak {
   margin-top: 30px;
   line-height: 3;
 }
-section .keliling .kotak span {
-  width: 100px;
-  height: 100px;
-  border: 2px solid red;
-}
+
 section .keliling .text {
   padding: 30px;
   border-bottom: 3px solid rgb(211, 209, 209);
@@ -313,6 +313,8 @@ section .keliling .nilai-keliling input {
   padding: 3px;
   position: relative;
   margin: 40px;
+  border-radius: 5px;
+  border: 2px solid gray;
 }
 section .keliling .nilai-keliling .btn-hitung {
   position: relative;
@@ -366,4 +368,56 @@ section .keliling .nilai-keliling .hitung {
 }
 #output-keliling {
   display: none;
+  position: relative;
+  left: 15px;
+  line-height: 2;
 }
+section .keliling .nilai-keliling .reset {
+  justify-content: right;
+  display: flex;
+  min-height: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+section .keliling .nilai-keliling .btn-reset {
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+}
+section .keliling .nilai-keliling .btn-reset:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+section .keliling .nilai-keliling .btn-reset:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(0, 89, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h6 {
+  color: #dedede;
+  font-size: 1rem;
+}
+footer h6 a {
+  text-decoration: none;
+  color: #dedede;
+}
+/* section Keliling End */
